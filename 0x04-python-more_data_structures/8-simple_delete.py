@@ -2,4 +2,4 @@
 def simple_delete(a_dictionary, key=""):
     if a_dictionary.__contains__(key):
         del a_dictionary[key]
-    reutn a_dictionary    
+    return a_dictionary    
