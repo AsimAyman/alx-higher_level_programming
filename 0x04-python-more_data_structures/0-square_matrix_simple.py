@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    return (list(map(lambda inerlist: list(map(lambda e: e ** 2, inerlist)),matrix)))
+    n = [[j ** 2 for j in i] for i in matrix]
+    return (n)
