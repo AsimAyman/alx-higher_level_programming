@@ -10,7 +10,6 @@ class MyInt(int):
     """class that inherits from int"""
 
     def __init__(self, my_int):
-        """for initialize a value my_int"""
 
         self.my_int = my_int
 
