@@ -10,7 +10,6 @@ class MyInt(int):
     """class that inherits from int"""
 
     def __init__(self, my_int):
-
         self.my_int = my_int
 
     @property
@@ -26,14 +25,13 @@ class MyInt(int):
 
     def __eq__(self, other):
         """equal method"""
-
         if self.my_int == other:
             return False
         else:
             return True
 
     def __ne__(self, other):
-            if self.my_int != other:
-                return False
-            else:
-                return True
+        if self.my_int != other:
+            return False
+        else:
+            return True
