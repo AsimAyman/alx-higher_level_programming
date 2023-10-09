@@ -1,14 +1,19 @@
 #!/usr/bin/python3
 """
-class Mylist
+class module
 """
 
 
-class MyList(list):
-    """MyList class
-    """
+class BaseGeometry:
+    """Geometry class"""
 
-    def print_sorted(self):
-        """print list
-        """
-        print(sorted(self))
+    def area(self):
+        """raise exception is area is not implemented"""
+        raise Exception('area() is not implemented')
+
+    def integer_validator(self, name, value):
+        """check if value is an integer"""
+        if type(value) != int:
+            raise TypeError('{} must be an integer'.format(name))
+        if value <= 0:
+            raise ValueError('{} must be greater than 0'.format(name))
