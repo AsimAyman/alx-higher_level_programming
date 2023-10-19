@@ -1,19 +1,16 @@
 #!/usr/bin/python3
-"""
-class module
-"""
+"""Defines a class MyList that inherits from list"""
 
 
-class BaseGeometry:
-    """Geometry class"""
+class MyList(list):
+    """Class that inherits from list.
 
-    def area(self):
-        """raise exception is area is not implemented"""
-        raise Exception('area() is not implemented')
-
-    def integer_validator(self, name, value):
-        """check if value is an integer"""
-        if type(value) != int:
-            raise TypeError('{} must be an integer'.format(name))
-        if value <= 0:
-            raise ValueError('{} must be greater than 0'.format(name))
+    Args:
+        list (list): list to sort in ascending order.
+    """
+    def print_sorted(self):
+        """Prints a list in ascending order.
+        """
+        list_ = self[:]
+        list_.sort()
+        print(list_)
